@@ -8,19 +8,25 @@ import { MoviesListComponent } from './movies-list/movies-list.component';
 import { MoviesDetailsComponent } from './movies-details/movies-details.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [				
     AppComponent,
-      HomeComponent,
-      MoviesListComponent,
-      MoviesDetailsComponent,
-      HeaderComponent
+    HomeComponent,
+    MoviesListComponent,
+    MoviesDetailsComponent,
+    HeaderComponent
+      
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
